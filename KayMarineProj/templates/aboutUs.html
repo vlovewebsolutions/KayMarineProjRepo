@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="jumbotron-fluid AboutUsPageJumbo">
+    <div class="container">
+        <div class="row align-items-center justify-content-center">
+            <h1 class="text-white AboutHeading">
+                ABOUT US
+                <hr class="AboutUsUnderLine">
+            </h1>
+        </div>
+    </div>
+</div>
+<div class="container p-5">
+    <div class="row">
+        <div class="col-lg-4">
+            <img src="{% static 'images/AboutUsImg.jpg' %}" class="img-fluid" alt="About Company">
+        </div>
+        <div class="col-lg-8">
+            <p class="AboutUsText text-secondary">
+                Kay Marine Pvt. Ltd Shipping Services is a quality managed
+                company providing a  comprehensive range of Marine Surveying
+                and Consultancy services.
+
+                Kay Marine complements high-end technical expertise with
+                legal awareness and commercial acumen thus providing an unmatched
+                level of service. Our services are Specialized, Personalized
+                and Customized. One would always find Kay Marine as their
+                trusted partner for meeting the industry standard requirements
+                and for handling any situation.
+            </p>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
+

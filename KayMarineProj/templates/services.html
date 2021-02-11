@@ -1,0 +1,143 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="jumbotron-fluid ServicesPage">
+    <div class="container">
+        <div class="row align-items-center justify-content-center">
+            <h1 class="text-white AboutHeading">
+                OUR SERVICES
+                <hr class="AboutUsUnderLine">
+            </h1>
+        </div>
+    </div>
+</div>
+<div class="container p-5">
+    <div class="row MarineServices SlideInOne">
+        <div class="col-lg-4">
+            <img src="{% static 'images/marine-safety.jpg' %}" class="ServicesImages" alt="marine-safety">
+        </div>
+        <div class="col-lg-8">
+            <h2 class="ServicesH2Tag">
+                Marine Life Saving Equipment
+                <hr class="ServicesHrTag" align="left">
+            </h2>
+            <p class="text-secondary">
+                We provide routine and non-routine surveys, maintenance and repair of life saving Equipment.
+            </p>
+        </div>
+    </div>
+    <div class="row mt-5 MarineServices SlideInTwo">
+        <div class="col-lg-8">
+            <h2 class="ServicesH2Tag">
+                Marine Fire Fighting Equipment
+                <hr class="ServicesHrTag" align="left">
+            </h2>
+            <p class="text-secondary">
+                We Conduct Routine and Non Routine Surveys, Services and repair on Fire Fighting Equipment.
+            </p>
+        </div>
+        <div class="col-lg-4">
+            <img src="{% static 'images/marine-fire-fighting-equipment.jpg' %}" class="ServicesImages" alt="marine-safety">
+        </div>
+    </div>
+    <div class="row mt-5 MarineServices SlideInThree">
+        <div class="col-lg-4">
+            <img src="{% static 'images/gas-detection-equipment.jpg' %}" class="ServicesImages" alt="marine-safety">
+        </div>
+        <div class="col-lg-8">
+            <h2 class="ServicesH2Tag">
+                Marine Agency Services
+                <hr class="ServicesHrTag" align="left">
+            </h2>
+            <p class="text-secondary">
+                We provide professional and knowledgeable
+                representation which will improve operations
+                and expedite vessel’s turn around in port
+                safely and efficiently.
+            </p>
+        </div>
+    </div>
+    <div class="row mt-5 MarineServices SlideInFour">
+        <div class="col-lg-8">
+            <h2 class="ServicesH2Tag">
+                Marine Monitoring System
+                <hr class="ServicesHrTag" align="left">
+            </h2>
+            <p class="text-secondary">
+                Marine Monitoring System monitors
+                the state of the environment and integrity
+                of the platform in real time, enhances platform safety.
+            </p>
+        </div>
+        <div class="col-lg-4">
+            <img src="{% static 'images/marine-monitoring.jpg' %}" class="ServicesImages" alt="marine-safety">
+        </div>
+    </div>
+    <div class="row mt-5 MarineServices SlideInFive">
+        <div class="col-lg-4">
+            <img src="{% static 'images/underwaterShipHullCleaning.jpg' %}" class="ServicesImages" alt="marine-safety">
+        </div>
+        <div class="col-lg-8">
+            <h2 class="ServicesH2Tag">
+                Underwater survey and hull cleaning
+                <hr class="ServicesHrTag" align="left">
+            </h2>
+            <p class="text-secondary">
+                We provide vessel underwater hull surveys,
+                inspection and cleaning with latest approved equipment.
+            </p>
+        </div>
+    </div>
+    <div class="row mt-5 MarineServices SlideInSix">
+        <div class="col-lg-8">
+            <h2 class="ServicesH2Tag">
+                Marine Measurement & Calibration
+                <hr class="ServicesHrTag" align="left">
+            </h2>
+            <p class="text-secondary">
+                We provide routine servicing and maintenance
+                of marine measurement equipment,
+                including UTI, fixed measuring systems etc.
+            </p>
+        </div>
+        <div class="col-lg-4">
+            <img src="{% static 'images/marine_measurement.jpg' %}" class="ServicesImages" alt="marine-safety">
+        </div>
+    </div>
+    <div class="row mt-5 MarineServices SlideInSeven">
+        <div class="col-lg-4">
+            <img src="{% static 'images/ship-survey.jpg' %}" class="ServicesImages" alt="marine-safety">
+        </div>
+        <div class="col-lg-8">
+            <h2 class="ServicesH2Tag">
+                Marine Audits and Pre Vetting Inspections
+                <hr class="ServicesHrTag" align="left">
+            </h2>
+            <p class="text-secondary">
+                We have a team of Trainees and Auditors
+                who can conduct Navigation, Safety, Security,
+                MLC and ISM audits. All auditors are Ex-Masters
+                with extensive Tanker Experience and can conduct
+                Pre-Vettings inspection and preparations.
+            </p>
+        </div>
+    </div>
+    <!--<div class="row mt-5 MarineServices SlideInEight">
+        <div class="col-lg-8">
+            <h2 class="ServicesH2Tag">
+                Marine GMDSS & Radio Survey Services
+                <hr class="ServicesHrTag" align="left">
+            </h2>
+            <p class="text-secondary">
+                We provide one of the best marine GMDSS and Radio Survey Services in Australia
+            </p>
+        </div>
+        <div class="col-lg-4">
+            <img src="{% static 'images/radio-survey-services.jpg' %}" class="ServicesImages" alt="marine-safety">
+        </div>
+    </div>-->
+</div>
+
+{% endblock %}
+

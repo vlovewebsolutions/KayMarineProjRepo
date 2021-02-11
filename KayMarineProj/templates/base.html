@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <title>Kay Marine</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    {% load static %}
+
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Niconne&family=Pattaya&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+  </head>
+  <body>
+    <div class="KayLogoDiv">
+        <img src="{% static 'images/KayMarine.png' %}" class="KayLogo" alt="Logo">
+    </div>
+    <ul class="NavBar">
+       <li><a href="{% url 'index' %}">HOME</a></li>
+       <li><a href="{% url 'aboutUs' %}">ABOUT US</a></li>
+       <li><a href="{% url 'services' %}">SERVICES</a></li>
+       <li><a href="{% url 'contactUs' %}">CONTACT US</a></li>
+    </ul>
+   {% block content %}
+
+    {% endblock %}
+    <!-------------------------------Footer------------------------------------->
+    <div class="jumbotron-fluid FooterJumbo">
+      <div class="container p-5">
+        <div class="row" style="margin-right: 0px;">
+          <div class="col-lg-3 text-center">
+            <img src="{% static 'images/kayMarineLogo.png' %}"  class="FooterLogoImg" alt="Los Angeles">
+            <p class="p-3">
+              Welcome to Kay Marine and we thank you for visiting our Website!
+              Kay Marine is a Marine Service and Supplies provider based in Australia.
+              We are one stop Provider for Consumable Stores, Marine Spares, Services,
+              Provision and Bond Supplies.
+            </p>
+          </div>
+          <div class="col-lg-4 align-items-center">
+            <div class="row p-2 mt-5  align-items-center justify-content-center">
+                <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+                    <i class="fa fa-phone-square fa-2x p-2 mr-2"  aria-hidden="true"></i>
+                </div>
+                <div class="col-lg-9 col-md-9 col-sm-9 col-9">
+                    +61481343721
+                </div>
+            </div>
+            <div class="row p-2 align-items-center justify-content-center">
+                <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+                    <i class="fa fa-map-marker fa-2x p-2 mr-3" aria-hidden="true"></i>
+                </div>
+                <div class="col-lg-9 col-md-9 col-sm-9 col-9">
+                    9/929 Wellington Street, West Perth, WA, 6005, Australia
+                </div>
+            </div>
+            <div class="row p-2 align-items-center justify-content-center">
+                <div class="col-lg-3  col-md-3 col-sm-3 col-3">
+                    <i class="fa fa-facebook-official fa-2x p-2 mr-2" aria-hidden="true"></i>
+                </div>
+                <div class="col-lg-9 col-md-9 col-sm-9 col-9">
+                    FACEBOOK
+                </div>
+            </div>
+            <div class="row p-2 align-items-center justify-content-center">
+                <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+                    <i class="fa fa-twitter-square fa-2x p-2 mr-2" aria-hidden="true"></i>
+                </div>
+                <div class="col-lg-9 col-md-9 col-sm-9 col-9">
+                    TWITTER
+                </div>
+            </div>
+          </div>
+          <div class="col-lg-3 align-items-center">
+            <div class="row align-items-center justify-content-center mt-5 pl-2 pr-2 pb-2  pt-5">
+              <p>MARINE SHIP SURVEY</p>
+            </div>
+            <div class="row align-items-center justify-content-center p-2">
+              <p>AUDITS</p>
+            </div>
+            <div class="row align-items-center justify-content-center p-2">
+              <p>MARINE SUPPLIES</p>
+            </div>
+            <div class="row align-items-center justify-content-center p-2">
+              <p>MANAGEMENT SERVICES</p>
+            </div>
+          </div>
+          <div class="col-lg-2">
+              <div class="row align-items-center justify-content-center pt-5 mt-5">
+                <iframe src="https://giphy.com/embed/ryED74VAkygAo" width="80%" height="80%" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/flag-ryED74VAkygAo"></a></p>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row bg-white" style="margin-right:0px;">
+      <div class="col-lg-12">
+        <h6 class="p-2 text-center" style="color:#3C4678;font-weight:bold;">COPYRIGHT &#169; KAY MARINE 2020</h6>
+      </div>
+    </div>
+    <!-------------------------------END OF Footer------------------------------------->
+    <!-- Optional JavaScript -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js" integrity="sha512-ZKNVEa7gi0Dz4Rq9jXcySgcPiK+5f01CqW+ZoKLLKr9VMXuCsw3RjWiv8ZpIOa0hxO79np7Ec8DDWALM0bDOaQ==" crossorigin="anonymous"></script>
+
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="{% static 'js/navbar_affix.js' %}"></script>
+    <script src="{% static 'js/animation.js' %}"></script>
+    </body>
+</html>

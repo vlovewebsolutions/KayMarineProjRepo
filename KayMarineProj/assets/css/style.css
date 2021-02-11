@@ -1,0 +1,84 @@
+
+* {
+    font-family: 'Archivo Narrow', sans-serif;
+    }
+body {
+    margin:0;
+    padding:0;
+    }
+
+
+.IMTE_LOGO {
+    height: 80px;
+    margin-bottom: 10px;
+    transition: all 0.5s;
+    position: relative;
+    animation-name: LogoAnimation;
+    animation-duration: 1.5s;
+    animation-delay: -1s;
+    animation-direction: alternate;
+    animation-timing-function: ease-out;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+}
+
+@keyframes LogoAnimation {
+  from{top:0px;}
+  to{top:10px;}
+}
+
+.IMTE_LOGO_CSS_TWO {
+    height: 40px;
+    margin-bottom: 10px;
+    transition: all 0.5s;
+    position: relative;
+    animation-name: LogoAnimation;
+    animation-duration: 1.5s;
+    animation-delay: -1s;
+    animation-direction: alternate;
+    animation-timing-function: ease-out;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+}
+
+.BgHomeHeading {
+    background-image:url('/static/images/shipWithSea.jpg');
+    height:600px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.NavMenu:hover {
+    border: 2px solid #0c0d66;
+    border-radius: 6px;
+}
+
+
+.HeadingBtn {
+    background-color: skyblue;
+    border: none;
+    border-radius: 10px;
+    padding: 20px 60px;
+    opacity: 0.9;
+    color: white;
+    font-size: 30px;
+    margin-bottom: 35px;
+}
+.BriefAboutCompany {
+    position: relative;
+    margin-top: 300px;
+}
+
+.ServicesKayMarine {
+    background-image:url('/static/images/bg.png');
+    height: 1200px;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.ServicesHeading {
+    margin-top: 280px;
+    padding: 100px;
+}
